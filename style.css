@@ -23,7 +23,7 @@ height: 180px;
     width: 75px;
     border-radius: 50%;
     position: absolute;
-    right: 40px;
+    right: 110px;
     bottom: 280px;
  }
 .red{
@@ -39,4 +39,88 @@ height: 180px;
     bottom: 100px;
     left: 120px;
 }
+.leave-review{
+    width: 260px;
+    height: 120px;
+    position: absolute;
+    left: 18px;
+    bottom: 85px;
+    font-style: italic;
+}
+::placeholder{
+    position: relative;
+    bottom: 40px;
+    left: 3px;
+}
+.send-review {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235, 226, 226);
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #383737 gr;
+    font-size: 18px;
+    position: relative;
+    top: 115px;
+    left:70px;
+}
+.arrow {
+    color: rgb(235, 226, 226);
+    position: relative;
+    top: 70px;
+    text-decoration: none;
+    left: 215px;
+    font-size: 26px;
+    font-weight: bold;
+}
 
+.left-arrow {
+
+    color: red;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    size: 32px;
+    text-decoration: none;
+
+}
+.left-text {
+
+    color: rgb(235, 226, 226);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 40px;
+    top: 80px;
+}
+.address {
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235, 226, 226);
+    opacity: 0.70;
+    position: relative;
+    top: 90px;
+    left:40px;
+    font-size: 16px;
+ 
+}
+.border-dashed {
+    width: 225px;
+    border-bottom: dashed;
+    font-weight: lighter;
+    opacity: 0.55;
+ 
+}
+.phone-number {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235, 226, 226);
+    opacity: 0.95;
+    position: relative;
+    top: 28px;
+    left:7px;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+.stars {
+    
+}
