@@ -6,7 +6,7 @@ body {
 .center-div {
     background-color: #4D5770;
     width: 600px;
-    height: 350px;
+    height: 325px;
     opacity: 0.95;
     margin: 0 auto;
     position: relative;
@@ -90,7 +90,7 @@ height: 180px;
     font-weight: bold;
     position: relative;
     left: 40px;
-    top: 80px;
+    top: 50px;
 }
 .address {
 
@@ -98,29 +98,97 @@ height: 180px;
     color: rgb(235, 226, 226);
     opacity: 0.70;
     position: relative;
-    top: 90px;
+    top: 70px;
     left:40px;
     font-size: 16px;
  
 }
 .border-dashed {
-    width: 225px;
+    width: 240px;
     border-bottom: dashed;
     font-weight: lighter;
     opacity: 0.55;
+    padding-top: 40px;
+   position: relative;
+   right: 20px;
  
 }
 .phone-number {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(235, 226, 226);
     opacity: 0.95;
-    position: relative;
-    top: 28px;
-    left:7px;
+    position: absolute;
+    top: 85px;
+    left:25px;
     font-size: 26px;
     font-weight: bold;
 
 }
-.stars {
-    
+.rating {
+    float:left;
+    position: relative;
+    left:44px;
+    top:65px;
+    border: none;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+.phone-image {
+height: 30px;
+position: absolute;
+top: 110px;
+left: -14px;
+color: white;
+font-weight: bold;
 }
